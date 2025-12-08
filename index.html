@@ -2,6 +2,7 @@
 <html>
     <head>
         <link href="./css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     </head>
     <body>
         <header>
@@ -13,34 +14,81 @@
             <nav>
                 <h4 width="110" height="18">Les formations</h4>
                 <input id="nav-bar" type="text" placeholder="Rechercher" />
-                <button class="nav-button">Connexion</button>
-                <button class="nav-button">Inscription</button>
+                <button class="nav-button" id="connexion">Connexion</button>
+                <button class="nav-button" id="inscription">Inscription</button>
             </nav>
         </header>
 
         <main>
             <div class="banner">
-                <img
-                    src="html-css/resources/assets/images/img-course.png"
-                    width="100%"
-                />
                 <img src="html-css/resources/assets/images/bg-header.png" />
+                <div class="banner-text">
+                    <h1>KLIVIO, l'ALLIE DE VOTRE PROGRESSION</h1>
+                    <h5>
+                        LES MEILLEURES FORMATIONS SUR LE DEVELOPPEMENT PERSONNEL
+                    </h5>
+                    <button class="nav-button">En savoir plus</button>
+                </div>
+            </div>
+
+            <section>
+                <div class="popular-course">
+                    <h2>Les formations populaires</h2>
+                    <button class="more-course">Voir plus de formations</button>
+                </div>
+                <div class="recent-course">
+                    <h2>Les formations récentes</h2>
+                    <button class="more-course">Voir plus de formations</button>
+                </div>
+            </section>
+
+            <div class="reviews">
+                <h1>AVIS CLIENTS</h1>
             </div>
             <section>
-                <div class="popular-classes"></div>
-                <div class="recent-classes"></div>
-            </section>
-            <div class="reviews"></div>
-            <section>
                 <div class="advantages"></div>
-                <div class="class-advantages"></div>
+                <div class="course-advantages"></div>
             </section>
+
             <section>
-                <div class="contact"></div>
-                <div class="about"></div>
+                <div class="about">
+                    <h1>A PROPOS DE KLIVIO</h2>
+                    <div class="big-logo">
+                        <img src="html-css/resources/assets/images/logo.png" width="430" height="155"/>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h1>NOUS CONTACTER</h2>
+                </div>
             </section>
         </main>
 
-        <footer></footer>
+        <footer>
+            <img
+                src="html-css/resources/assets/images/logo.png"
+                width="243"
+                height="47"
+            />
+            <div class="mentions">
+                <h4>Mentions légales</h4>
+                <div>
+                    <p>CGU</p>
+                    <p>CGV</p>
+                    <p>FAQ</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+            <div class="coords">
+                <h4>Coordonées</h4>
+                <div>
+                    <p>1 Place de la République</p>
+                    <p>75003 Paris</p>
+                    <p>01.02.03.04.05</p>
+                    <p>contact@klivio.fr</p>
+                </div>
+            </div>
+            <button class="foot-button" id="connexion">Connexion</button>
+            <button class="foot-button" id="inscription">Inscription</button>
+        </footer>
     </body>
 </html>
