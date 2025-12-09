@@ -64,6 +64,14 @@ header #nav-bar {
 .about img {
     background-color: #152237;
 }
+.contact {
+    align-items: center;
+    margin: auto;
+}
+
+.form {
+    background-color: #152237;
+}
 
 footer {
     background-color: #152237;
