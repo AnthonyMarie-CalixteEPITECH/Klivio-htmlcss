@@ -1,24 +1,43 @@
+@import url(global-var.css);
+
+* {
+    margin: 0;
+}
+
 body {
     width: 100%;
     margin: 0px;
     font-family: "Montserrat";
     font-style: medium;
 }
+
+/*-------HEADER-------*/
 header {
-    background-color: #152237;
+    background-color: var(--dark);
     width: 100%;
-    min-width: 393px;
-    height: 80px;
+    height: 10%;
+    color: white;
+    display: inline-block;
 }
 
-header h4 {
-    width: 110px;
-    height: 10px;
-    color: white;
+header img {
+    height: 80%;
 }
+
+header nav {
+    width: 80vw;
+    display: inline;
+}
+
+header #nav-bar {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px white solid;
+}
+
 header .nav-button,
 footer .foot-button {
-    width: 130px;
+    width: 13vh;
     height: 40px;
     border-radius: 7px;
 }
@@ -28,15 +47,18 @@ footer .foot-button {
 }
 
 #inscription {
-    background-color: #44dd8a;
+    background-color: var(--green);
 }
+
 header #nav-bar {
     width: 477px;
     height: 40px;
 }
 
+/*-------BANNER------*/
 .banner {
-    background-image: linear-gradient(to right, #44dd8a, #15b7e2);
+    position: relative;
+    background-image: linear-gradient(to right, var(--green), var(--grad));
 }
 
 .banner img {
@@ -46,39 +68,69 @@ header #nav-bar {
 }
 
 .banner-text {
-    width: 100%;
-    font-size: 80%;
-    top: 25%;
-    text-align: center;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
 }
 
 .banner-text h1 {
-    color: #152237;
+    color: var(--dark);
 }
-
+/*-----COURSES------*/
 .recent-course {
-    background-color: #152237;
+    display: flex;
+    background-color: var(--dark);
 }
 
-.about img {
-    background-color: #152237;
+.courses {
+    margin: 50px;
 }
+
+/*------ABOUT------*/
+.about img {
+    background-color: var(--dark);
+}
+
+/*------FORM-------*/
 .contact {
     align-items: center;
     margin: auto;
 }
 
 .form {
-    background-color: #152237;
+    background-color: var(--dark);
+}
+
+/*-----FOOTER-----*/
+.upper-grad {
+    background-image: linear-gradient(to right, var(--green), var(--grad));
+    width: 100vw;
+    margin: 0;
+    height: 1vh;
 }
 
 footer {
-    background-color: #152237;
-    display: flex;
+    background-color: var(--dark);
+    text-align: left;
     color: white;
 }
 
-footer div {
+footer .upper-foot {
+    display: inline-block;
+    align-items: center;
     padding: 5px;
+    width: 100%;
+}
+
+.middle-line {
+    background-image: linear-gradient(to right, var(--green), var(--grad));
+    height: 0.5vh;
+    width: 80vw;
+    justify-self: center;
+}
+
+footer .lower-foot {
 }
