@@ -1,26 +1,14 @@
 .star {
-    width: 2%;
-    aspect-ratio: 1;
-    background-color: #f8ca00;
-    clip-path: polygon(
-        50% 0,
-        calc(50% * (1 + sin(0.4turn))) calc(50% * (1 - cos(0.4turn))),
-        calc(50% * (1 - sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
-        calc(50% * (1 + sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
-        calc(50% * (1 - sin(0.4turn))) calc(50% * (1 - cos(0.4turn)))
-    );
+    width: 1.49999999rem;
+    aspect-ratio: 1/1;
+    background-image: url("/html-css/resources/assets/images/star.svg");
+    background-repeat: no-repeat;
 }
 
 .star-unchecked {
-    width: 2%;
-    aspect-ratio: 1;
-    background-color: #f8ca00;
+    width: 1.49999999rem;
+    aspect-ratio: 1/1;
     opacity: 30%;
-    clip-path: polygon(
-        50% 0,
-        calc(50% * (1 + sin(0.4turn))) calc(50% * (1 - cos(0.4turn))),
-        calc(50% * (1 - sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
-        calc(50% * (1 + sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
-        calc(50% * (1 - sin(0.4turn))) calc(50% * (1 - cos(0.4turn)))
-    );
+    background-image: url("/html-css/resources/assets/images/star.svg");
+    background-repeat: no-repeat;
 }

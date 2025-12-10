@@ -3,22 +3,19 @@
     <head>
         <link href="./css/style.css" rel="stylesheet" />
         <link href="./css/shapes.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Montserrat"
         />
     </head>
     <body>
         <header>
-            <img
-                src="html-css/resources/assets/images/logo.png"
-                width="84"
-                height="31"
-            />
+            <img src="html-css/resources/assets/images/logo.png" />
             <nav>
                 <p>Les formations</p>
                 <input id="nav-bar" type="text" placeholder="    Rechercher" />
-                <i></i>
                 <button class="nav-button" id="connexion">Connexion</button>
                 <button class="nav-button" id="inscription">Inscription</button>
             </nav>
@@ -26,7 +23,14 @@
 
         <main>
             <div class="banner">
-                <img src="html-css/resources/assets/images/bg-header.png" />
+                <img
+                    class="computer-bg"
+                    src="html-css/resources/assets/images/bg-header.png"
+                />
+                <img
+                    class="mobile-bg"
+                    src="html-css/resources/assets/images/banner-mobile.png"
+                />
                 <div class="banner-text">
                     <h1>KLIVIO, l'ALLIE DE VOTRE PROGRESSION</h1>
                     <h5>
@@ -36,9 +40,9 @@
                 </div>
             </div>
 
-            <section>
-                <div class="popular-course">
-                    <h2>Les formations populaires</h2>
+            <section class="popular-section">
+                <h2 class="course-header">Les formations populaires</h2>
+                <div class="popular-courses --courses">
                     <div class="courses">
                         <img
                             src="html-css/resources/assets/images/img-course.png"
@@ -46,11 +50,13 @@
                         />
                         <h3>Parler en public</h3>
                         <p>Sonia Lefèvre | Coach prise de parole</p>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
                         <p>Gagnez en aisance et captez votre auditoire</p>
                     </div>
                     <div class="courses">
@@ -60,11 +66,13 @@
                         />
                         <h3>Gérer le stress</h3>
                         <p>Lucie Garnier | Formatrice</p>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star-unchecked"></div>
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star-unchecked"></div>
+                        </div>
                         <p>Apprenez à rester serein face aux défis</p>
                     </div>
                     <div class="courses">
@@ -74,11 +82,13 @@
                         />
                         <h3>Travailler en équipe</h3>
                         <p>David Moreau | Expert</p>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
                         <p>Collaborez efficacement, même à distance</p>
                     </div>
                     <div class="courses">
@@ -88,18 +98,25 @@
                         />
                         <h3>Gérer son temps</h3>
                         <p>Claire Dumas | Coach organisation</p>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star-unchecked"></div>
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star-unchecked"></div>
+                        </div>
                         <p>Optimisez vos journées et gagnez en efficacité</p>
                     </div>
-                    <button class="more-course">Voir plus de formations</button>
                 </div>
+                <button class="more-course black-button">
+                    Voir plus de formations
+                </button>
+            </section>
 
-                <div class="recent-course">
-                    <h2>Les formations récentes</h2>
+            <section class="recent-section">
+                <h2 class="course-header">Les formations récentes</h2>
+                <div class="recent-courses --courses">
+                    <br />
                     <div class="courses">
                         <img
                             src="html-css/resources/assets/images/img-course.png"
@@ -107,11 +124,13 @@
                         />
                         <h3>Mieux communiquer</h3>
                         <p>Julien Martel | Coach en comm.</p>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
                         <p>
                             Améliorez vos échanges et votre impact relationnel
                         </p>
@@ -123,11 +142,13 @@
                         />
                         <h3>Maîtriser ses émotions</h3>
                         <p>Amel Benali | Psy. du travail</p>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
                         <p>Développez calme et intelligence émotionnelle</p>
                     </div>
                     <div class="courses">
@@ -137,11 +158,13 @@
                         />
                         <h3>Résoudre les problèmes</h3>
                         <p>Thomas Rivière | Expert</p>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star-unchecked"></div>
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star-unchecked"></div>
+                        </div>
                         <p>
                             Analysez, décidez et trouvez des solutions durables
                         </p>
@@ -153,30 +176,36 @@
                         />
                         <h3>Leadership positif</h3>
                         <p>Marc Nguyen | Consultant</p>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star-unchecked"></div>
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star-unchecked"></div>
+                        </div>
                         <p>Inspirez, motivez et fédérez votre équipe</p>
                     </div>
-                    <button class="more-course">Voir plus de formations</button>
                 </div>
+                <button class="more-course white-button">
+                    Voir plus de formations
+                </button>
             </section>
 
+            <h1>AVIS CLIENTS</h1>
             <div class="reviews">
-                <h1>AVIS CLIENTS</h1>
-                <div class="user">
+                <div class="user --juliette">
                     <img
                         src="html-css/resources/assets/images/juliette.png"
                         alt=""
                     />
                     <h3>Juliette</h3>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
+                    <div class="rating">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
                     <p>
                         J'ai trouvé le parcours très bien structuré : vidéos
                         courtes, quizzes pertinents et projets pratiques qui
@@ -185,17 +214,19 @@
                         parfait pour se former en autonomie.
                     </p>
                 </div>
-                <div class="user">
+                <div class="user --camille">
                     <img
                         src="html-css/resources/assets/images/camille.png"
                         alt=""
                     />
                     <h3>Camille</h3>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
+                    <div class="rating">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
                     <p>
                         Bon équilibre entre théorie et pratique. Les chapitres
                         sont détaillés, et le support et les corrections
@@ -205,21 +236,24 @@
                 </div>
             </div>
             <section>
-                <div class="advantages">
-                    <h1>Les avantages Klivio</h1>
-                    <ul>
-                        <li>Suivi de sa progression</li>
-                        <li>Exercices et QCM pour la mise en pratique</li>
-                        <li>
-                            Possibilité de télécharger/imprimer les formations
-                        </li>
-                        <li>Contenu qualitatif et vérifié</li>
-                        <li>Suivi en autonomie, 24h/24, 7j/7</li>
-                        <li>
-                            Espaces d'échanges dédiés pour poser ses questions
-                            sur les formations
-                        </li>
-                    </ul>
+                <div class="advantages --formation">
+                    <div class="progress">
+                        <h1>Les avantages Klivio</h1>
+                        <ul>
+                            <li>Suivi de sa progression</li>
+                            <li>Exercices et QCM pour la mise en pratique</li>
+                            <li>
+                                Possibilité de télécharger/imprimer les
+                                formations
+                            </li>
+                            <li>Contenu qualitatif et vérifié</li>
+                            <li>Suivi en autonomie, 24h/24, 7j/7</li>
+                            <li>
+                                Espaces d'échanges dédiés pour poser ses
+                                questions sur les formations
+                            </li>
+                        </ul>
+                    </div>
                     <div class="img">
                         <img
                             src="html-css/resources/assets/images/avantages.png"
@@ -227,32 +261,34 @@
                         />
                     </div>
                 </div>
-                <div class="course-advantages">
+                <div class="course-advantages --formation">
                     <div class="img">
                         <img
                             src="html-css/resources/assets/images/become-author.png"
                             alt=""
                         />
                     </div>
-                    <h1>Créez vos formations avec Klivio</h1>
-                    <ul>
-                        <li>
-                            Commission unique, au pourcentage sur les ventes
-                        </li>
-                        <li>Mise en avant sur la plateforme</li>
-                        <li>Contrôle total sur le cours : contenu, prix</li>
-                        <li>
-                            Fonctionnalités avancées : espace commentaires,
-                            possibilité de créer des QCM, exercices, vidéos,
-                            téléchargement en PDF, suivi des statistiques des
-                            ventes, gestion de codes promos, gestion de la
-                            facturation, etc
-                        </li>
-                        <li>
-                            Le professeur reste 100% propriétaire de sa
-                            formation et conserve tous ses droits d' auteur
-                        </li>
-                    </ul>
+                    <div class="create">
+                        <h1>Créez vos formations avec Klivio</h1>
+                        <ul>
+                            <li>
+                                Commission unique, au pourcentage sur les ventes
+                            </li>
+                            <li>Mise en avant sur la plateforme</li>
+                            <li>Contrôle total sur le cours : contenu, prix</li>
+                            <li>
+                                Fonctionnalités avancées : espace commentaires,
+                                possibilité de créer des QCM, exercices, vidéos,
+                                téléchargement en PDF, suivi des statistiques
+                                des ventes, gestion de codes promos, gestion de
+                                la facturation, etc
+                            </li>
+                            <li>
+                                Le professeur reste 100% propriétaire de sa
+                                formation et conserve tous ses droits d' auteur
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -343,10 +379,14 @@
                         <p>contact@klivio.fr</p>
                     </div>
                 </div>
-                <button class="foot-button" id="connexion">Connexion</button>
-                <button class="foot-button" id="inscription">
-                    Inscription
-                </button>
+                <div class="foot-button">
+                    <button class="foot-button" id="connexion">
+                        Connexion
+                    </button>
+                    <button class="foot-button" id="inscription">
+                        Inscription
+                    </button>
+                </div>
             </div>
             <div class="middle-line"></div>
             <div class="lower-foot">

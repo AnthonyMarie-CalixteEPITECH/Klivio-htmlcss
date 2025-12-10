@@ -1,43 +1,59 @@
 @import url(global-var.css);
 
 * {
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    /* border: 2px gold solid; */
+}
+
+button {
+    cursor: pointer;
 }
 
 body {
     width: 100%;
-    margin: 0px;
     font-family: "Montserrat";
-    font-style: medium;
+    font-style: normal;
+}
+
+.break {
+    width: 100%;
 }
 
 /*-------HEADER-------*/
 header {
     background-color: var(--dark);
-    width: 100%;
-    height: 10%;
+    height: 80px;
     color: white;
-    display: inline-block;
+    display: flex;
 }
 
 header img {
-    height: 80%;
+    margin: auto var(--space);
+    width: 84px;
+    height: 31px;
 }
 
 header nav {
-    width: 80vw;
-    display: inline;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
 header #nav-bar {
     background-color: transparent;
-    border-radius: 8px;
-    border: 2px white solid;
+    border-radius: 5px;
+    border: 1px white solid;
+    width: 30%;
+    height: 50%;
 }
 
 header .nav-button,
 footer .foot-button {
-    width: 13vh;
+    width: 130px;
     height: 40px;
     border-radius: 7px;
 }
@@ -48,17 +64,14 @@ footer .foot-button {
 
 #inscription {
     background-color: var(--green);
-}
-
-header #nav-bar {
-    width: 477px;
-    height: 40px;
+    margin-right: 5%;
 }
 
 /*-------BANNER------*/
 .banner {
     position: relative;
     background-image: linear-gradient(to right, var(--green), var(--grad));
+    /*background-image: url("html-css/ressources/assets/images/banner-bg.png");*/
 }
 
 .banner img {
@@ -77,20 +90,153 @@ header #nav-bar {
 }
 
 .banner-text h1 {
+    font-weight: 800;
     color: var(--dark);
 }
+
+.banner-text button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: white;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+}
+
+.computer-bg {
+    display: block;
+}
+.mobile-bg {
+    display: none;
+}
 /*-----COURSES------*/
-.recent-course {
-    display: flex;
+.popular-section {
+    text-align: center;
+    color: var(--dark);
+}
+
+.recent-section {
+    text-align: center;
     background-color: var(--dark);
+    color: white;
+}
+.--courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    margin: 2% var(--space);
+}
+
+.course-header {
+    width: 80%;
+    padding: 2% var(--space);
+    text-align: left;
+}
+
+.black-button {
+    background-color: var(--dark);
+    color: white;
+}
+.white-button {
+    background-color: white;
+    color: var(--dark);
+}
+
+.more-course {
+    width: 225px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 4%;
 }
 
 .courses {
-    margin: 50px;
+    position: relative;
+    flex-shrink: 0;
+    width: 25%;
 }
 
-/*------ABOUT------*/
-.about img {
+.rating {
+    display: flex;
+    flex-direction: row;
+}
+
+/*-------AVIS------*/
+h1 {
+    text-align: center;
+}
+.reviews {
+    display: flex;
+    justify-content: center;
+    margin-inline: 4%;
+}
+
+.user {
+    width: 40%;
+    margin-inline: 2.5%;
+}
+
+.user img {
+    border-radius: 10vh;
+}
+
+/*-------FORMATION-------*/
+
+.--formation .img {
+    margin: 3.5% var(--space);
+    width: 50%;
+}
+
+.--formation h1 {
+    width: 50%;
+}
+/*-------AVANTAGES-------*/
+
+.advantages {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+}
+
+.progress {
+    margin: 3.5% var(--space);
+    word-spacing: 20px;
+}
+
+.progress h1 {
+    width: 100%;
+    padding-bottom: 10%;
+    text-align: left;
+}
+
+/*------CREATE COURSE------*/
+.course-advantages {
+    background-color: var(--green);
+    display: flex;
+}
+
+.create {
+    margin: 3.5% var(--space);
+    word-spacing: 20px;
+}
+
+.create h1 {
+    width: 100%;
+    padding-bottom: 10%;
+    text-align: left;
+}
+
+/*-------ABOUT------*/
+.about {
+    display: inline;
+}
+.about-text {
+    max-width: 50%;
+}
+.about .big-logo {
+    max-width: 50%;
     background-color: var(--dark);
 }
 
@@ -107,8 +253,7 @@ header #nav-bar {
 /*-----FOOTER-----*/
 .upper-grad {
     background-image: linear-gradient(to right, var(--green), var(--grad));
-    width: 100vw;
-    margin: 0;
+    width: 100%;
     height: 1vh;
 }
 
@@ -118,13 +263,17 @@ footer {
     color: white;
 }
 
-footer .upper-foot {
-    display: inline-block;
+.upper-foot {
+    display: flex;
+    gap: 15vw;
     align-items: center;
-    padding: 5px;
     width: 100%;
 }
 
+.lower-foot {
+    display: inline;
+    gap: 40vw;
+}
 .middle-line {
     background-image: linear-gradient(to right, var(--green), var(--grad));
     height: 0.5vh;
