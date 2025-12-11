@@ -1,9 +1,19 @@
 @media (max-width: 800px) {
-    .computer-bg {
+    .computer-bg,
+    header nav {
         display: none;
     }
 
-    .mobile-bg {
+    .mobile-bg,
+    header .burger {
         display: block;
+    }
+
+    .gallery {
+        justify-content: center;
+    }
+
+    .course-header {
+        text-align: center;
     }
 }

@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-    border: 1px gold solid;
+    /* border: 1px gold solid; */
 }
 
 /* section {
@@ -75,10 +75,20 @@ footer .foot-button {
     margin-right: 5%;
 }
 
+.burger {
+    position: absolute;
+    top: 3%;
+    right: 0%;
+    scale: 0.7;
+    display: none;
+}
+
 /*-------BANNER--------------------------------------------------------------------------------*/
 .banner {
     position: relative;
     background-image: linear-gradient(to right, var(--green), var(--grad));
+    height: clamp(393px, 26.5, 450px);
+    overflow: hidden;
     /*background-image: url("html-css/ressources/assets/images/banner-bg.png");*/
 }
 
@@ -113,10 +123,13 @@ footer .foot-button {
 }
 
 .computer-bg {
+    object-fit: scale-down;
     display: block;
 }
 .mobile-bg {
-    min-height: 477px;
+    margin: -200px 0 0 -0px;
+    object-fit: cover;
+
     display: none;
 }
 /*-----COURSES--------------------------------------------------------------------------------------------------------------*/
@@ -184,6 +197,7 @@ footer .foot-button {
 .rating {
     display: flex;
     flex-direction: row;
+    max-height: 25px;
 }
 
 /*-------AVIS--------------------------------------------------------------------------------------------------*/
@@ -197,11 +211,11 @@ footer .foot-button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-inline: 5%;
+    margin-inline: 0%;
 }
 
 .user {
-    width: 100%;
+    width: 41%;
     margin-inline: 2.5%;
 }
 

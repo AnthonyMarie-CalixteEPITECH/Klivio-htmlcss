@@ -1,14 +1,15 @@
 .star {
     width: 1.49999999rem;
-    aspect-ratio: 1/1;
-    /* background-image: url("html-css/resources/assets/images/star.png"); */
-    background-repeat: no-repeat;
+    border-radius: 10vh;
+    max-height: 25px;
+    /*background-image: url("html-css/resources/assets/images/star.png");
+    background-repeat: no-repeat; */
 }
 
 .star-unchecked {
     width: 1.49999999rem;
-    aspect-ratio: 1/1;
+    max-height: 25px;
     opacity: 30%;
-    background-image: url("/html-css/resources/assets/images/star.svg");
-    background-repeat: no-repeat;
+    /* background-image: url("/html-css/resources/assets/images/star.svg");
+    background-repeat: no-repeat; */
 }
