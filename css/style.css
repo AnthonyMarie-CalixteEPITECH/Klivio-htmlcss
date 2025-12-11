@@ -4,8 +4,12 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-    /* border: 2px gold solid; */
+    border: 1px gold solid;
 }
+
+/* section {
+    border: 1px gold solid;
+} */
 
 button {
     cursor: pointer;
@@ -21,7 +25,7 @@ body {
     width: 100%;
 }
 
-/*-------HEADER-------*/
+/*-------HEADER-----------------------------------------------------------------------------------------------------*/
 header {
     background-color: var(--dark);
     height: 80px;
@@ -41,6 +45,10 @@ header nav {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+}
+
+header p {
+    font-size: 15px;
 }
 
 header #nav-bar {
@@ -67,7 +75,7 @@ footer .foot-button {
     margin-right: 5%;
 }
 
-/*-------BANNER------*/
+/*-------BANNER--------------------------------------------------------------------------------*/
 .banner {
     position: relative;
     background-image: linear-gradient(to right, var(--green), var(--grad));
@@ -75,7 +83,7 @@ footer .foot-button {
 }
 
 .banner img {
-    opacity: 50%;
+    opacity: 20%;
     width: 100%;
     height: auto;
 }
@@ -110,7 +118,16 @@ footer .foot-button {
 .mobile-bg {
     display: none;
 }
-/*-----COURSES------*/
+/*-----COURSES--------------------------------------------------------------------------------------------------------------*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    width: 90%;
+    margin: 0% var(--space);
+}
+
 .popular-section {
     text-align: center;
     color: var(--dark);
@@ -121,18 +138,13 @@ footer .foot-button {
     background-color: var(--dark);
     color: white;
 }
-.--courses {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: left;
-    margin: 2% var(--space);
-}
 
 .course-header {
-    width: 80%;
-    padding: 2% var(--space);
+    width: 90%;
+    padding: var(--space) 0%;
     text-align: left;
+    justify-self: center;
+    font-size: 36px;
 }
 
 .black-button {
@@ -154,8 +166,18 @@ footer .foot-button {
 
 .courses {
     position: relative;
-    flex-shrink: 0;
-    width: 25%;
+    width: 305px;
+    height: 362px;
+    /* transform: translate(-5%); */
+    /* scale: 100%; */
+    /* justify-self: left; */
+}
+
+.courses img {
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    height: 206px;
 }
 
 .rating {
@@ -163,40 +185,48 @@ footer .foot-button {
     flex-direction: row;
 }
 
-/*-------AVIS------*/
-h1 {
+/*-------AVIS--------------------------------------------------------------------------------------------------*/
+.avis {
+    padding: 5% 0%;
+}
+.avis h1 {
     text-align: center;
 }
 .reviews {
     display: flex;
     justify-content: center;
-    margin-inline: 4%;
+    flex-wrap: wrap;
+    margin-inline: 5%;
 }
 
 .user {
-    width: 40%;
+    width: 100%;
     margin-inline: 2.5%;
 }
 
+.user p {
+    font-size: 13px;
+}
 .user img {
     border-radius: 10vh;
 }
 
-/*-------FORMATION-------*/
+/*-------FORMATION---------------------------------------------------------------------------------------------------*/
 
 .--formation .img {
     margin: 3.5% var(--space);
-    width: 50%;
+    scale: 0.9;
 }
 
 .--formation h1 {
     width: 50%;
 }
-/*-------AVANTAGES-------*/
+/*-------AVANTAGES--------------------------------------------------------------------------------------------------*/
 
 .advantages {
     background-color: #f5f5f5;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -211,10 +241,11 @@ h1 {
     text-align: left;
 }
 
-/*------CREATE COURSE------*/
+/*------CREATE COURSE--------------------------------------------------------------------------------------------------*/
 .course-advantages {
     background-color: var(--green);
     display: flex;
+    flex-wrap: wrap;
 }
 
 .create {
@@ -228,19 +259,24 @@ h1 {
     text-align: left;
 }
 
-/*-------ABOUT------*/
+/*-------ABOUT--------------------------------------------------------------------------------------------------*/
 .about {
-    display: inline;
+    background-color: var(--dark);
+    display: flex;
+    flex-wrap: wrap;
 }
 .about-text {
-    max-width: 50%;
+    width: 50%;
+    background-color: #f5f5f5;
 }
 .about .big-logo {
-    max-width: 50%;
-    background-color: var(--dark);
+    align-self: center;
+    text-align: center;
+    height: 100%;
+    width: 50%;
 }
 
-/*------FORM-------*/
+/*------FORM---------------------------------------------------------------------------------------------------*/
 .contact {
     align-items: center;
     margin: auto;
@@ -250,7 +286,7 @@ h1 {
     background-color: var(--dark);
 }
 
-/*-----FOOTER-----*/
+/*-----FOOTER-------------------------------------------------------------------------------------------------*/
 .upper-grad {
     background-image: linear-gradient(to right, var(--green), var(--grad));
     width: 100%;
@@ -265,6 +301,8 @@ footer {
 
 .upper-foot {
     display: flex;
+    flex-wrap: wrap;
+
     gap: 15vw;
     align-items: center;
     width: 100%;
@@ -277,7 +315,7 @@ footer {
 .middle-line {
     background-image: linear-gradient(to right, var(--green), var(--grad));
     height: 0.5vh;
-    width: 80vw;
+    width: 80%;
     justify-self: center;
 }
 
