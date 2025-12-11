@@ -1,7 +1,7 @@
 .star {
     width: 1.49999999rem;
     aspect-ratio: 1/1;
-    background-image: url("/html-css/resources/assets/images/star.svg");
+    background-image: url("html-css/resources/assets/images/star.svg");
     background-repeat: no-repeat;
 }
 
@@ -9,6 +9,6 @@
     width: 1.49999999rem;
     aspect-ratio: 1/1;
     opacity: 30%;
-    background-image: url("/html-css/resources/assets/images/star.svg");
+    background-image: url("html-css/resources/assets/images/star.svg");
     background-repeat: no-repeat;
 }
