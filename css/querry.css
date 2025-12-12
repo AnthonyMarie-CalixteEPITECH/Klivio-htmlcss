@@ -1,4 +1,74 @@
-@media (max-width: 800px) {
+/*------------------------------ORDINATEUR-----------------------------------*/
+@media (max-width: 1350px) {
+    .gallery {
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        column-gap: 5%;
+        row-gap: 5%;
+    }
+
+    .course-header {
+        text-align: center;
+    }
+
+    .advantages {
+        flex-direction: column;
+    }
+
+    .course-advantages {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .progress,
+    .create {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        align-self: center;
+    }
+
+    .--formation img {
+        border: 2px red solid;
+        width: 80%;
+        align-self: center;
+    }
+
+    .mobile-h1 {
+        display: block;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .computer-h1 {
+        display: none;
+    }
+}
+/*------------------------------TABLETTE-----------------------------------*/
+@media (max-width: 1200px) {
+    .gallery {
+        justify-content: center;
+        grid-template-columns: auto auto;
+        column-gap: 5%;
+        row-gap: 2.5%;
+    }
+
+    .course-header {
+        text-align: center;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .big-logo {
+        padding: 20% var(--space);
+    }
+}
+/*-----------------------------MOBILE------------------------------------*/
+
+@media (max-width: 1000px) {
     .computer-bg,
     header nav {
         display: none;
@@ -7,13 +77,35 @@
     .mobile-bg,
     header .burger {
         display: block;
+        /* aspect-ratio: 1/1; */
     }
+    /*-----------------------------------------------------------------------------------------------------------------------*/
 
     .gallery {
         justify-content: center;
+        grid-template-columns: auto;
+        row-gap: 0px;
     }
 
     .course-header {
         text-align: center;
     }
+    /*-----------------------------------------------------------------------------------------------------------------------*/
+    .user {
+        text-align: center;
+        align-content: center;
+        justify-self: center;
+        width: 70%;
+        margin: 2.5% 5%;
+    }
+
+    .user p {
+        justify-self: right;
+        margin-top: 5%;
+    }
+
+    .user .rating {
+        justify-content: center;
+    }
 }
+/*-----------------------------------------------------------------------------------------------------------------------*/

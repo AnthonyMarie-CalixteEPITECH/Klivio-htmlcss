@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
+    list-style: none;
     /* border: 1px gold solid; */
 }
 
@@ -24,7 +25,6 @@ body {
 .break {
     width: 100%;
 }
-
 /*-------HEADER-----------------------------------------------------------------------------------------------------*/
 header {
     background-color: var(--dark);
@@ -51,19 +51,25 @@ header p {
     font-size: 15px;
 }
 
-header #nav-bar {
-    background-color: transparent;
-    border-radius: 5px;
-    border: 1px white solid;
-    width: 30%;
-    height: 50%;
-}
-
 header .nav-button,
 footer .foot-button {
     width: 130px;
     height: 40px;
     border-radius: 7px;
+}
+
+#nav-bar {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px white solid;
+    width: 30%;
+    height: 50%;
+    position: relative;
+}
+header nav::before {
+    content: url("/html-css/resources/assets/images/loupe.svg");
+    position: absolute;
+    right: 43%;
 }
 
 #connexion {
@@ -77,7 +83,7 @@ footer .foot-button {
 
 .burger {
     position: absolute;
-    top: 3%;
+    top: 1.5rem;
     right: 0%;
     scale: 0.7;
     display: none;
@@ -127,19 +133,20 @@ footer .foot-button {
     display: block;
 }
 .mobile-bg {
-    margin: -200px 0 0 -0px;
+    margin: -700px -800px 0px -0px;
     object-fit: cover;
 
     display: none;
 }
 /*-----COURSES--------------------------------------------------------------------------------------------------------------*/
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     justify-content: space-between;
     text-align: left;
     width: 90%;
     margin: 0% var(--space);
+    column-gap: 2.5%;
 }
 
 .popular-section {
@@ -228,13 +235,13 @@ footer .foot-button {
 
 /*-------FORMATION---------------------------------------------------------------------------------------------------*/
 
-.--formation .img {
+.--formation img {
     margin: 3.5% var(--space);
-    scale: 0.9;
+    height: auto;
 }
 
 .--formation h1 {
-    width: 50%;
+    width: 100%;
 }
 /*-------AVANTAGES--------------------------------------------------------------------------------------------------*/
 
@@ -246,14 +253,19 @@ footer .foot-button {
 }
 
 .progress {
-    margin: 3.5% var(--space);
-    word-spacing: 20px;
+    width: 30%;
+    height: 80%;
+    padding-left: 5%;
+    margin-top: 3.5%;
+}
+
+.progress li {
+    margin-top: 6%;
 }
 
 .progress h1 {
-    width: 100%;
     padding-bottom: 10%;
-    text-align: left;
+    text-align: start;
 }
 
 /*------CREATE COURSE--------------------------------------------------------------------------------------------------*/
@@ -261,34 +273,50 @@ footer .foot-button {
     background-color: var(--green);
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .create {
-    margin: 3.5% var(--space);
-    word-spacing: 20px;
+    width: 30%;
+    height: 80%;
+    padding-right: 5%;
+    margin-top: 3.5%;
 }
 
-.create h1 {
-    width: 100%;
+.create li {
+    margin-top: 6%;
+}
+
+.computer-h1 {
     padding-bottom: 10%;
     text-align: left;
 }
 
+.mobile-h1 {
+    width: 80%;
+    padding-bottom: 10%;
+    text-align: center;
+    display: none;
+}
+
 /*-------ABOUT--------------------------------------------------------------------------------------------------*/
 .about {
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-color: var(--dark);
-    display: flex;
-    flex-wrap: wrap;
+    align-items: center;
 }
 .about-text {
-    width: 50%;
+    justify-self: center;
+    padding: 20% var(--space);
     background-color: #f5f5f5;
 }
-.about .big-logo {
-    align-self: center;
-    text-align: center;
+.big-logo {
+    align-content: center;
+    justify-self: center;
     height: 100%;
-    width: 50%;
+
+    background-color: var(--dark);
 }
 
 /*------FORM---------------------------------------------------------------------------------------------------*/
