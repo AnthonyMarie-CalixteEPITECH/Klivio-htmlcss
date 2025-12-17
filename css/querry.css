@@ -11,6 +11,27 @@
         text-align: center;
     }
 
+    /* .--formation {
+        align-items: center;
+    }
+
+    .--formation * {
+        width: 100%;
+    } */
+}
+/*------------------------------TABLETTE-----------------------------------*/
+@media (max-width: 1200px) {
+    .gallery {
+        justify-content: center;
+        grid-template-columns: auto auto;
+        column-gap: 5%;
+        row-gap: 2.5%;
+    }
+
+    .course-header {
+        text-align: center;
+    }
+
     .advantages {
         flex-direction: column;
     }
@@ -24,37 +45,32 @@
     .create {
         flex-direction: column;
         align-items: center;
-        width: 80%;
         align-self: center;
+        width: 75%;
+    }
+    .progress h2,
+    .create h2 {
+        text-align: center;
     }
 
-    .--formation img {
-        width: 80%;
-        align-self: center;
-    }
-
-    .mobile-h1 {
+    .mobile-h2 {
         display: block;
         text-align: center;
         align-self: center;
         justify-self: center;
     }
 
-    .computer-h1 {
-        display: none;
-    }
-}
-/*------------------------------TABLETTE-----------------------------------*/
-@media (max-width: 1200px) {
-    .gallery {
-        justify-content: center;
-        grid-template-columns: auto auto;
-        column-gap: 5%;
-        row-gap: 2.5%;
+    .progress li, .create li {
+        margin-bottom: 10%;
     }
 
-    .course-header {
-        text-align: center;
+    .computer-h2 {
+        display: none;
+    }
+
+    .--formation img {
+        /* width: 80%; */
+        align-self: center;
     }
 
     .about {
@@ -76,6 +92,8 @@
     .mobile-bg,
     header .burger {
         display: block;
+        background-size: cover;
+        background-position: center center;
         /* aspect-ratio: 1/1; */
     }
     /*-----------------------------------------------------------------------------------------------------------------------*/
@@ -90,9 +108,12 @@
         text-align: center;
     }
 
-    .courses {
-        width: 100%;
-        aspect-ratio: 1;
+    .popular-price-tag {
+        right: 10%;
+    }
+
+    .recent-price-tag {
+        right: 10%;
     }
     /*-----------------------------------------------------------------------------------------------------------------------*/
     .user {
@@ -111,5 +132,54 @@
     .user .rating {
         justify-content: center;
     }
+    /*-----------------------------------------------------------------------------------------------------------------------*/
+    .big-logo {
+        width: auto;
+    }
+    /*-----------------------------------------------------------------------------------------------------------------------*/
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact * {
+        margin:  0px;
+        margin-top: 5%;
+    }
+
+    input[type="submit"] {
+        margin-bottom: 10%;
+    }
+    /*-----------------------------------------------------------------------------------------------------------------------*/
+
+    .upper-foot {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .upper-foot * {
+        align-items: center;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .coords ul {
+        display: block;
+        justify-self: center;
+    }
+
+    .coords ul * {
+        text-align: start;
+        padding-bottom: 10px;
+    }
+
+    .middle-line,
+    .lower-foot,
+    .foot-button {
+        display: none;
+    }
 }
-/*-----------------------------------------------------------------------------------------------------------------------*/

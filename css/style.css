@@ -51,8 +51,7 @@ header p {
     font-size: 15px;
 }
 
-header .nav-button,
-footer .foot-button {
+header .nav-button {
     width: 130px;
     height: 40px;
     border-radius: 7px;
@@ -72,11 +71,11 @@ header nav::before {
     right: 43%;
 }
 
-#connexion {
+#connexion, #foot-connexion {
     background-color: white;
 }
 
-#inscription {
+#inscription, #foot-inscription {
     background-color: var(--green);
     margin-right: 5%;
 }
@@ -93,9 +92,8 @@ header nav::before {
 .banner {
     position: relative;
     background-image: linear-gradient(to right, var(--green), var(--grad));
-    height: clamp(393px, 26.5, 450px);
+    height: 450px;
     overflow: hidden;
-    /*background-image: url("html-css/ressources/assets/images/banner-bg.png");*/
 }
 
 .banner img {
@@ -129,15 +127,23 @@ header nav::before {
 }
 
 .computer-bg {
-    object-fit: scale-down;
-    display: block;
+    background-image: url("../html-css/resources/assets/images/bg-header.png");
+    opacity: 20%;
+    z-index: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .mobile-bg {
-    margin: -700px -800px 0px -0px;
-    object-fit: cover;
-
+    background-image: url("../html-css/resources/assets/images/banner-mobile.png");
+    opacity: 20%;
+    z-index: 1;
+    height: 100%;
+    background-repeat: no-repeat;
     display: none;
 }
+
 /*-----COURSES--------------------------------------------------------------------------------------------------------------*/
 .gallery {
     display: grid;
@@ -159,7 +165,51 @@ header nav::before {
     background-color: var(--dark);
     color: white;
 }
+/*-------*/
+.popular-price-tag {
+    display: flex;
+    background-color: var(--dark);
+    color: white;
+    position: absolute;
+    border-radius: 50px;
+    padding: 1.5% 4%;
+    bottom: 38%;
+    right: 5%;
+    align-items: center;
+}
+.popular-price-tag h5 {
+    font-size: 20px;
+    margin-right: 5px;
+    font-style: bold;
+}
+.popular-price-tag p {
+    font-size: 10px;
+    text-decoration: line-through;
+    font-weight: 300;
+}
 
+.recent-price-tag {
+    display: flex;
+    background-color: white;
+    color: var(--dark);
+    position: absolute;
+    border-radius: 50px;
+    padding: 1.5% 4%;
+    bottom: 38%;
+    right: 5%;
+    align-items: center;
+}
+.recent-price-tag h5 {
+    font-size: 20px;
+    margin-right: 5px;
+    font-style: bold;
+}
+.recent-price-tag p {
+    font-size: 10px;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+/*-------*/
 .course-header {
     width: 90%;
     padding: var(--space) 0%;
@@ -189,9 +239,6 @@ header nav::before {
     position: relative;
     width: 305px;
     height: 362px;
-    /* transform: translate(-5%); */
-    /* scale: 100%; */
-    /* justify-self: left; */
 }
 
 .courses img {
@@ -201,9 +248,24 @@ header nav::before {
     height: 206px;
 }
 
+.courses h3 {
+    font-weight: 750;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.courses p, .courses h3 {
+    width: 305px;
+}
+
+.courses div p {
+    width: auto;
+}
+
 .rating {
     display: flex;
     flex-direction: row;
+    width: 305px;
     max-height: 25px;
 }
 
@@ -211,7 +273,7 @@ header nav::before {
 .avis {
     padding: 5% 0%;
 }
-.avis h1 {
+.avis h2 {
     text-align: center;
 }
 .reviews {
@@ -240,9 +302,10 @@ header nav::before {
     height: auto;
 }
 
-.--formation h1 {
+.--formation h2 {
     width: 100%;
 }
+
 /*-------AVANTAGES--------------------------------------------------------------------------------------------------*/
 
 .advantages {
@@ -253,17 +316,39 @@ header nav::before {
 }
 
 .progress {
-    width: 30%;
+    width: 40%;
     height: 80%;
-    padding-left: 5%;
+    padding-inline: 3%;
     margin-top: 3.5%;
 }
 
-.progress li {
-    margin-top: 6%;
+.progress ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
-.progress h1 {
+.progress-img {
+    min-width: 327px;
+    width: 40%;
+}
+
+.progress ul * {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+}
+
+.progress ul img {
+    margin: 0px;
+    margin-right: 5%;
+    align-self: baseline;
+    /* position: absolute;
+    left: -18%;
+    top: -25px; */
+}
+
+.progress h2 {
     padding-bottom: 10%;
     text-align: start;
 }
@@ -283,16 +368,37 @@ header nav::before {
     margin-top: 3.5%;
 }
 
-.create li {
-    margin-top: 6%;
+.create ul {
+    display: flex;
+    flex-direction: column;
 }
 
-.computer-h1 {
+.create-img {
+    min-width: 324px;
+    width: 40%;
+}
+
+.create ul * {
+    display: flex;
+    flex-direction: row;
+}
+
+.create ul img {
+    margin: 0px;
+    margin-right: 7.5%;
+    align-self: baseline;
+}
+
+.create li {
+    margin-top: 3%;
+}
+
+.computer-h2 {
     padding-bottom: 10%;
     text-align: left;
 }
 
-.mobile-h1 {
+.mobile-h2 {
     width: 80%;
     padding-bottom: 10%;
     text-align: center;
@@ -321,32 +427,61 @@ header nav::before {
 
 /*------FORM---------------------------------------------------------------------------------------------------*/
 .contact {
-    align-items: center;
-    margin: auto;
+    justify-items: center;
+}
+
+.contact h2 {
+    margin: 2.5% 0% 1.5% 0%;
+}
+
+.weird-line {
+    background-image: linear-gradient(to right, var(--green), var(--grad));
+    height: 0.2vh;
+    width: 20%;
+    margin: 0% 0% 1.5% 0%;
 }
 
 .form {
+    text-align: center;
+    width: 95%;
+}
+
+.form-input {
     background-color: var(--dark);
+    align-content: start;
 }
 
 .nom {
+    width: clamp(356px, 37.5vw, 600px);
+    height: 45px;
+    margin-right: clamp(48px, 5vw, 68px);
 }
 
 .email {
+    width: clamp(356px, 37.5vw, 600px);
+    height: 45px;
+    margin-left: clamp(48px, 5vw, 68px);
 }
 
 .msg {
+    min-width: 356px;
+    /* width: clamp(356px, 80vw, 1336px); */
+    width: 80vw;
+    height: clamp(195px, 5vh, 185px);
+    margin-top: 5%;
 }
 
 input[type="submit"] {
     width: clamp(350px, 5rem, 356px);
+    height: 45px;
     background-color: var(--green);
+    margin: 5% 0%;
 }
 /*-----FOOTER-------------------------------------------------------------------------------------------------*/
 .upper-grad {
     background-image: linear-gradient(to right, var(--green), var(--grad));
+    height: 18px;
     width: 100%;
-    height: 1%;
 }
 
 footer {
@@ -358,22 +493,99 @@ footer {
 .upper-foot {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 91%;
+}
 
-    gap: 15%;
-    align-items: center;
-    width: 100%;
+.upper-foot h4 {
+    padding-bottom: 20px;
+}
+
+.foot-logo {
+    align-self: center;
+    justify-self: center;
+    width: 243px;
+    height: 87px;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+.mentions {
+    margin-right: 5%;
+}
+
+.mentions ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.coords {
+    margin-right: 13%;
+}
+
+.coords ul * {
+    display: flex;
+    flex-direction: row;
+}
+
+.coords ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.coords ul * img {
+    padding: 0px;
+    margin-right: 20px;
+    color: white;
+    position: relative;
+}
+
+.localisation {
+    position: absolute;
+    bottom: 15px;
+}
+
+.foot-buttons {
+    width: 9%;
+    margin-bottom: 5%;
+}
+
+.foot-button {
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
 }
 
 .lower-foot {
-    display: inline;
-    gap: 40%;
+    display: flex;
+    gap: 70%;
+    margin: 0% 5%;
+    margin-top: 2.5%;
 }
 .middle-line {
     background-image: linear-gradient(to right, var(--green), var(--grad));
-    height: 0.5vh;
-    width: 80%;
+    height: 2px;
+    width: 90%;
     justify-self: center;
 }
 
-footer .lower-foot {
+.socials,
+.socials ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.socials {
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.socials p {
+    margin-right: 0.5rem;
+}
+.socials ul {
+    column-gap: 15%;
 }
