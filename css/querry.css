@@ -120,12 +120,15 @@
         text-align: center;
         align-content: center;
         justify-self: center;
-        width: 70%;
+        width: 90%;
         margin: 2.5% 5%;
     }
 
     .user p {
-        justify-self: right;
+        text-align: start;
+        word-spacing: 10px;
+        font-weight: 400;
+        line-height: 25px;
         margin-top: 5%;
     }
 
