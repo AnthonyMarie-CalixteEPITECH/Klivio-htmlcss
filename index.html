@@ -24,8 +24,10 @@
             <nav>
                 <p>Les formations</p>
                 <input id="nav-bar" type="text" placeholder="    Rechercher" >
-                <button class="nav-button" id="connexion">Connexion</button>
-                <button class="nav-button" id="inscription">Inscription</button>
+                <div class="nav-buttons">
+                    <button class="nav-button" id="connexion">Connexion</button>
+                    <button class="nav-button" id="inscription">Inscription</button>
+                </div>
             </nav>
             <img
                 src="html-css/resources/assets/images/burger.svg"
@@ -36,16 +38,6 @@
         <!------------------------------------------MAIN-------------------------------------------------->
         <main>
             <div class="banner">
-                <!-- <img
-                    class="computer-bg"
-                    src="html-css/resources/assets/images/bg-header.png"
-                    alt="Photo de bannière dans laquelle une femme a l'air pensive devant son ordinateur dans un salon"
-                >
-                <img
-                    class="mobile-bg"
-                    src="html-css/resources/assets/images/banner-mobile.png"
-                    alt="Photo de bannière dans laquelle une femme a l'air pensive devant son ordinateur dans un salon"
-                > -->
                 <div class="computer-bg"></div>
                 <div class="mobile-bg"></div>
                 <div class="banner-text">
@@ -616,19 +608,20 @@
                             type="text"
                             class="form-input nom"
                             name="name"
-                            placeholder="Nom"
+                            placeholder="   Nom"
                             autocomplete="name"
                         >
                         <input
                             type="text"
                             class="form-input email"
                             name="email"
-                            placeholder="Email"
+                            placeholder="   Email"
                             autocomplete="email"
                         >
                         <textarea
                             class="form-input msg"
                             name="message"
+                            placeholder="   Votre message"
                         ></textarea>
                         <input type="submit" class="submit" >
                     </form>

@@ -154,6 +154,11 @@
         margin-top: 5%;
     }
 
+    .nom, .email {
+        width: 80vw;
+    }
+
+
     input[type="submit"] {
         margin-bottom: 10%;
     }
