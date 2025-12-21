@@ -88,7 +88,7 @@ header nav::before {
 }
 
 #inscription, #foot-inscription {
-    background-color: var(--green);
+    background-image: linear-gradient(to right, var(--green), var(--grad));
     margin-right: 5%;
 }
 
