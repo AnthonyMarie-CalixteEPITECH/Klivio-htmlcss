@@ -19,6 +19,7 @@ button {
 body {
     width: 100%;
     font-family: "Montserrat";
+    color: var(--dark);
     font-style: normal;
 }
 
@@ -26,6 +27,10 @@ input, textarea {
     color: white;
     font-size: 15px;
     text-indent: 10px;
+}
+
+h2 {
+    font-weight: 1000;
 }
 
 .break {
@@ -52,7 +57,7 @@ header nav {
     flex-direction: row;
     align-items: center;
 }
- bvc
+
 header p {
     font-size: 15px;
 }
