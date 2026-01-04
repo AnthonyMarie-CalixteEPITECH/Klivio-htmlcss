@@ -19,7 +19,6 @@ button {
 body {
     width: 100%;
     font-family: "Montserrat";
-    color: var(--dark);
     font-style: normal;
 }
 
@@ -31,6 +30,7 @@ input, textarea {
 
 h2 {
     font-weight: 1000;
+    color: var(--dark);
 }
 
 .break {
@@ -133,6 +133,10 @@ header nav::before {
     color: var(--dark);
 }
 
+.banner-text p {
+    font-weight: 400;
+}
+
 .banner-text button {
     position: absolute;
     top: 100%;
@@ -194,7 +198,7 @@ header nav::before {
     right: 5%;
     align-items: center;
 }
-.popular-price-tag h5 {
+.popular-price-tag h4 {
     font-size: 20px;
     margin-right: 5px;
     font-style: bold;
@@ -216,7 +220,7 @@ header nav::before {
     right: 5%;
     align-items: center;
 }
-.recent-price-tag h5 {
+.recent-price-tag h4 {
     font-size: 20px;
     margin-right: 5px;
     font-style: bold;
@@ -522,7 +526,8 @@ footer {
     width: 91%;
 }
 
-.upper-foot h4 {
+.upper-foot h3 {
+    font-size: small;
     padding-bottom: 20px;
 }
 
